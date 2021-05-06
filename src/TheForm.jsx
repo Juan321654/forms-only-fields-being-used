@@ -7,7 +7,7 @@ function TheForm() {
   }
   let _obj = {}
   for(let [key, value] of Object.entries(data)){
-    if(value.length > 1) _obj[key] = value;
+    if(value.length >= 1) _obj[key] = value;
   }
   console.log(_obj);
   return (
